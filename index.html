@@ -101,8 +101,48 @@ section h2 {
   color: #173d32;
 }
 
+/* MEET NICHOLE */
+
 .about {
   background: white;
+}
+
+.about-container {
+  max-width: 1150px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 55px;
+  align-items: center;
+}
+
+.about-photo img {
+  width: 100%;
+  max-width: 480px;
+  height: 560px;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 14px;
+  display: block;
+  margin: auto;
+  box-shadow: 0 12px 30px rgba(0,0,0,.15);
+}
+
+.about-text h2 {
+  font-size: 42px;
+  margin-bottom: 18px;
+}
+
+.about-text .subtitle {
+  color: #a77a18;
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.about-text p {
+  font-size: 18px;
+  margin-bottom: 15px;
 }
 
 .cards {
@@ -163,7 +203,10 @@ footer strong {
   color: #e6c36a;
 }
 
-@media(max-width:600px) {
+/* MOBILE */
+
+@media(max-width: 750px) {
+
   nav {
     margin-top: 12px;
   }
@@ -178,6 +221,20 @@ footer strong {
     padding-top: 80px;
     padding-bottom: 80px;
   }
+
+  .about-container {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .about-photo img {
+    height: auto;
+    max-width: 420px;
+  }
+
+  .about-text h2 {
+    font-size: 34px;
+  }
 }
 </style>
 </head>
@@ -185,7 +242,10 @@ footer strong {
 <body>
 
 <header>
-  <div class="logo">ABRAHAM GRANT ACADEMY</div>
+
+  <div class="logo">
+    ABRAHAM GRANT ACADEMY
+  </div>
 
   <nav>
     <a href="#about">About</a>
@@ -193,20 +253,26 @@ footer strong {
     <a href="#videos">Videos</a>
     <a href="#seminars">Seminars</a>
   </nav>
+
 </header>
+
 
 <section class="hero">
 
   <div class="hero-content">
 
-    <p class="gold"><strong>GRANT WRITING EDUCATION</strong></p>
+    <p class="gold">
+      <strong>GRANT WRITING EDUCATION</strong>
+    </p>
 
     <h1>
       Learn to Find It.<br>
       Write It. <span class="gold">Win It.</span>
     </h1>
 
-    <h2>Grant Writing with Nichole Abraham</h2>
+    <h2>
+      Grant Writing with Nichole Abraham
+    </h2>
 
     <p>
       Practical, beginner-friendly grant writing education designed
@@ -214,7 +280,9 @@ footer strong {
       and develop stronger funding proposals.
     </p>
 
-    <a class="button" href="#videos">Watch Free Lessons</a>
+    <a class="button" href="#videos">
+      Watch Free Lessons
+    </a>
 
     <a class="button gold-button" href="#seminars">
       Future Seminars
@@ -225,16 +293,56 @@ footer strong {
 </section>
 
 
+<!-- MEET NICHOLE -->
+
 <section class="about" id="about">
 
-<h2>Meet Nichole Abraham</h2>
+  <div class="about-container">
 
-<p>
-Nichole Abraham is the instructor and founder of Abraham Grant Academy.
-Her goal is to make the grant-writing process understandable,
-approachable and practical for beginners, entrepreneurs,
-community organizations and aspiring grant writers.
-</p>
+    <div class="about-photo">
+
+      <img
+        src="nichole-abraham.jpg"
+        alt="Nichole Abraham - Founder of Abraham Grant Academy"
+      >
+
+    </div>
+
+    <div class="about-text">
+
+      <p class="subtitle">
+        YOUR GRANT-WRITING INSTRUCTOR
+      </p>
+
+      <h2>
+        Meet Nichole Abraham
+      </h2>
+
+      <p>
+        Nichole Abraham is the instructor and founder of
+        <strong>Abraham Grant Academy.</strong>
+      </p>
+
+      <p>
+        Her goal is to make the grant-writing process understandable,
+        approachable and practical for beginners, entrepreneurs,
+        community organizations and aspiring grant writers.
+      </p>
+
+      <p>
+        Through practical education, free lessons and upcoming
+        seminars, Abraham Grant Academy is designed to help students
+        develop the knowledge and confidence needed to pursue
+        funding opportunities.
+      </p>
+
+      <a class="button" href="#learn">
+        Start Learning
+      </a>
+
+    </div>
+
+  </div>
 
 </section>
 
@@ -332,7 +440,9 @@ with interactive Abraham Grant Academy seminars and workshops.
 
 <br>
 
-<strong>Seminar dates and registration information coming soon.</strong>
+<strong>
+Seminar dates and registration information coming soon.
+</strong>
 
 </section>
 
